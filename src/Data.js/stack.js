@@ -224,7 +224,7 @@ export const Frontend = [
         resource: "Project 3",
       },
       {
-        links: "https://youtu.be/HFj5FMb0jwY?si=dh4tZdEnVg5OeqXh",
+        link: "https://youtu.be/HFj5FMb0jwY?si=dh4tZdEnVg5OeqXh",
         resource: "Project 4",
       },
     ],
