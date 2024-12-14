@@ -3,7 +3,13 @@ import fullstack from "../assets/images/fullstack.gif";
 const FrontendPage = () => {
   return (
     <div className=" mx-auto md:w-[800px] min-h-[100vh] pt-[15rem] mb-20">
-      <div className="absolute top-0 left-0  w-[100%] h-[200px]"><img src={fullstack}   loading="lazy" className="w-[100%] h-[100%] object-cover"/></div>
+      <div className="absolute top-0 left-0  w-[100%] h-[200px]">
+        <img
+          src={fullstack}
+          loading="lazy"
+          className="w-[100%] h-[100%] object-cover"
+        />
+      </div>
       {Frontend.map((items, index) => (
         <div
           key={index}
@@ -14,14 +20,10 @@ const FrontendPage = () => {
           </h2>
           <ul className="list-disc mx-6  flex flex-col gap-6 text-[.8rem] md:text-[1rem] text-gray-800 ">
             {items.resources.map((resource, index) => (
-              <a
-                key={index}
-                href={resource.link}
-              
-                className=""
-
-              >
-                <li className="hover:bg-[#f7def7] rounded-lg p-2">{resource.resource}</li>
+              <a key={index} href={resource.link} className="">
+                <li className="hover:bg-[#f7def7] rounded-lg p-2">
+                  {resource.resource}
+                </li>
               </a>
             ))}
           </ul>

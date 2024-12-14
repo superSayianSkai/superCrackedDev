@@ -180,28 +180,28 @@ export const Frontend = [
         resource: "Rendering",
       },
       {
-        links: "https://youtu.be/uvEAvxWvwOs?si=d7YbPwnaMzFpN9_F",
+        link: "https://youtu.be/uvEAvxWvwOs?si=d7YbPwnaMzFpN9_F",
         resource: "Props",
       },
       {
-        links: "https://youtu.be/4Cf86qVEIJY?si=F8udkgrkiniKAklq",
+        link: "https://youtu.be/4Cf86qVEIJY?si=F8udkgrkiniKAklq",
         resource: "Hooks",
       },
       {
-        links:
+        link:
           "https://youtube.com/playlist?list=PLC3y8-rFHvwjkxt8TOteFdT_YmzwpBlrG&si=apm04gpm6Mbf5BVy",
         resource: "React Router",
       },
       {
-        links: "https://youtu.be/poQXNp9ItL4?si=3GylF0MwOzSbyMnv",
+        link: "https://youtu.be/poQXNp9ItL4?si=3GylF0MwOzSbyMnv",
         resource: "React Redux (State Management)",
       },
       {
-        links: "https://youtu.be/ZRFwuGpiLl4?si=pYs8e84Kl6kHB15X",
+        link: "https://youtu.be/ZRFwuGpiLl4?si=pYs8e84Kl6kHB15X",
         resource: "Calling APIs",
       },
       {
-        links:
+        link:
           "https://youtube.com/playlist?list=PLA4qBVt61k3Phpwt7uqaptIg9NYZ5aNu_&si=HfGX0sO2CYiGoBGe",
         resource: "Framer Motion Tutorials",
       },
