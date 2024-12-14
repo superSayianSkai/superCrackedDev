@@ -18,7 +18,7 @@ const BackendPage = () => {
           </h2>
           <ul className="list-disc mx-6  flex flex-col gap-6 text-[.8rem] md:text-[1rem] text-gray-800 ">
             {items.resources.map((resource, index) => (
-              <a key={index} href={resource.link} target="_blank" className="">
+              <a key={index} href={resource.link} className="">
                 <li className="hover:bg-[#f7def7] rounded-lg p-2">
                   {resource.resource}
                 </li>

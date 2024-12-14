@@ -16,7 +16,7 @@ const FullstackProjects = () => {
           key={index}
           className="list-disc  flex flex-col gap-10 text-[.8rem] md:text-[1rem] text-gray-800 cursor-pointer mx-20 my-8 "
         >
-          <a key={index} href={items.link} target="_blank" className="">
+          <a key={index} href={items.link}  className="">
             <li className="hover:bg-[#f7def7] rounded-lg p-2 mb-5">
               {items.resource}
             </li>

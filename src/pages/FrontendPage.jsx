@@ -17,7 +17,7 @@ const FrontendPage = () => {
               <a
                 key={index}
                 href={resource.link}
-                target="_blank"
+              
                 className=""
 
               >
