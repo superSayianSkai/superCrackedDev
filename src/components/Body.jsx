@@ -4,7 +4,7 @@ const Body = () => {
   return (
     <div className="flex justify-between items-center gap-2  px-4 pt-10 lg:px-12">
       <div className="flex flex-col items-center lg:items-start">
-        <h1 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-semibold  md:leading-[5rem] text-center lg:text-left">
+        <h1 className="text-[2.3rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-semibold  md:leading-[5rem] text-center lg:text-left">
           Zero to super
           <span className=" animated-text">Cracked</span>Dev For
           Beginners
