@@ -9,12 +9,12 @@ const Body = () => {
           <span className=" animated-text">Cracked</span>Dev For
           Beginners
         </h1>
-          <p className="mt-[20px] text-gray-600 italic text-[.8rem] text-center md:text-left">
+          <p className="mt-[20px] text-gray-600 italic text-[.8rem] text-center md:text-left w-[300px] sm:w-[100%]">
             &apos;&apos;Anyone with a laptop and internet connection can be
             cracked&apos;&apos;- skai
           </p>
         <Link to="/career">
-          <button className="border-2 px-6  py-4 rounded-[0.5em]  mt-[30px] bg-black text-white hover:bg-[#7E57C2] flex text-[.7rem] sm:text-[.8rem]">
+          <button className="border-2 px-6  py-4 rounded-[0.5em]  mt-[30px] bg-black text-white hover:bg-[#7E57C2] flex text-[.7rem] sm:text-[.8rem] outline-none border-none">
             <p className="">Start Cracking</p>
           </button>
         </Link>
