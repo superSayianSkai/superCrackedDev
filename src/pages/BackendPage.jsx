@@ -5,7 +5,7 @@ const BackendPage = () => {
   return (
     <div className=" mx-auto md:w-[800px] min-h-[100vh] pt-[15rem] mb-20">
       <div className="absolute top-0 left-0  w-[100%] h-[200px]">
-        <img src={fullstack} className="w-[100%] h-[100%] object-cover" />
+        <img src={fullstack}   loading="lazy" className="w-[100%] h-[100%] object-cover" />
       </div>
 
       {Backend.map((items, index) => (

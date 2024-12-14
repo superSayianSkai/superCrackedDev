@@ -3,7 +3,7 @@ import fullstack from "../assets/images/fullstack.gif";
 const FrontendPage = () => {
   return (
     <div className=" mx-auto md:w-[800px] min-h-[100vh] pt-[15rem] mb-20">
-      <div className="absolute top-0 left-0  w-[100%] h-[200px]"><img src={fullstack} className="w-[100%] h-[100%] object-cover"/></div>
+      <div className="absolute top-0 left-0  w-[100%] h-[200px]"><img src={fullstack}   loading="lazy" className="w-[100%] h-[100%] object-cover"/></div>
       {Frontend.map((items, index) => (
         <div
           key={index}

@@ -23,14 +23,13 @@ const CarrierPage = () => {
                 {c.career}
               </p>
 
-              {/* Image */}
               <img
                 src={c.image}
                 alt={c.career}
                 className="w-full h-[100%] sm:h-[100%] object-cover transform transition-transform duration-300 group-hover:scale-110"
+                loading="lazy"
               />
 
-              {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-50 z-20 transition-opacity"></div>
             </div>
           </a>

@@ -4,7 +4,7 @@ const Body = () => {
   return (
     <div className="flex justify-between items-center gap-2  px-4 pt-10 lg:px-12">
       <div className="flex flex-col items-center lg:items-start">
-        <h1 className="text-[2.2rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-semibold  md:leading-[5rem] text-center lg:text-left">
+        <h1 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-semibold  md:leading-[5rem] text-center lg:text-left">
           Zero to super
           <span className=" animated-text">Cracked</span>Dev For
           Beginners
@@ -14,7 +14,7 @@ const Body = () => {
             cracked&apos;&apos;- skai
           </p>
         <Link to="/career">
-          <button className="border-2 px-6  py-4 rounded-[0.5em]  mt-[30px] bg-black text-white hover:bg-[#7E57C2] flex">
+          <button className="border-2 px-6  py-4 rounded-[0.5em]  mt-[30px] bg-black text-white hover:bg-[#7E57C2] flex text-[.7rem] sm:text-[.8rem]">
             <p className="">Start Cracking</p>
           </button>
         </Link>
