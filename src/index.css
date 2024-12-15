@@ -12,6 +12,7 @@
 }
 
 
+
 .animated-text {
   font-weight: bold;
   position: relative;
@@ -22,6 +23,7 @@
   -webkit-background-clip: text; /* Safari compatibility */
   color: transparent; /* Make the text transparent */
   animation: text-move 5s linear infinite; /* Animate the gradient */
+  
 }
 
 /* Keyframes for moving the gradient */

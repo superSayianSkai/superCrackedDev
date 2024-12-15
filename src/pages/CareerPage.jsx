@@ -2,7 +2,6 @@ import { Career } from "../Data.js/Career";
 import { useState } from "react";
 
 const CarrierPage = () => {
-  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div
