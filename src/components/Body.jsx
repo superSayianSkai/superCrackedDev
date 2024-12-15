@@ -18,7 +18,7 @@ const Body = () => {
           </button>
         </Link>
       </div>
-      <img src={image} className="w-[250px] h-[250px] sm:h-[300px] sm:w-[300px] md:h-[220px] md:w-[220px] lg:h-[500px] lg:w-[500px]  lg:block" />
+      <img src={image} className="w-[280px] h-[280px] sm:h-[300px] sm:w-[300px] md:h-[220px] md:w-[220px] lg:h-[500px] lg:w-[500px]  lg:block" />
     </div>
   );
 };
