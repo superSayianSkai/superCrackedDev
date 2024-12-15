@@ -2,7 +2,7 @@ import image from "../assets/images/Video game developer.gif";
 import { Link } from "react-router";
 const Body = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-2  px-4 pt-10 lg:px-12 overflow-hidden">
+    <div className="flex flex-col md:flex-row justify-around items-center gap-10 md:gap-2 mt-4  px-4 pt-10 lg:px-12 overflow-hidden">
       <div className="flex flex-col  lg:items-start items-center">
         <h1 className="text-[2.2rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-semibold  md:leading-[5rem] text-center lg:text-left">
           From Zero to super
