@@ -9,6 +9,7 @@
   --text-color: #000;
   --text2-color: #fff;
   --backgroundColor: hsl(224, 50%, 98%);
+  --backgroundColor2: #000;
   --button-color: #000;
   --shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-hover: 0 15px 25px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -19,9 +20,12 @@
   --text-color: #fff;
   --text2-color: #000;
   --backgroundColor: #000;
+  --backgroundColor2: hsl(224, 50%, 98%);
   --button-color: #fff;
-  --shadow: 0 10px 20px rgba(126, 87, 194, 0.4), 0 4px 8px rgba(126, 87, 194, 0.4);
-  --shadow-hover: 0 15px 25px rgba(126, 87, 194, 0.6), 0 6px 12px rgba(126, 87, 194, 0.5);
+  --shadow: 0 10px 20px rgba(126, 87, 194, 0.4),
+    0 4px 8px rgba(126, 87, 194, 0.4);
+  --shadow-hover: 0 15px 25px rgba(126, 87, 194, 0.6),
+    0 6px 12px rgba(126, 87, 194, 0.5);
 }
 
 /* General Styling */
@@ -32,6 +36,7 @@
   font-family: "Ubuntu", serif;
   transition: all 0.3s cubic-bezier(0.16, 0.8, 0.62, 1.52);
   scroll-behavior: smooth;
+  scrollbar-width: thin;
 }
 
 body {
@@ -54,7 +59,9 @@ body {
 }
 
 [data-theme="dark"] .boxShadow:hover {
-  box-shadow: var(--shadow-hover); /* Apply stronger purple shadow on hover in dark mode */
+  box-shadow: var(
+    --shadow-hover
+  ); /* Apply stronger purple shadow on hover in dark mode */
 }
 
 .text-color {
@@ -69,6 +76,9 @@ body {
 }
 .backgroundColor {
   background: var(--backgroundColor);
+}
+.backgroundColor2 {
+  border-color: var(--backgroundColor2);
 }
 
 .animated-text {

@@ -3,9 +3,9 @@ import { Link } from "react-router";
 const CareerPageUpdate = () => {
   return (
     <div>
-      <div className={`flex flex-col items-center px-4 my-[20px] `}>
-        <div className="flex flex-col gap-6 mt-[40px]">
-          <h2 className="text-center text-[1.5rem] sm:text-[2.4rem] font-bold mt-[80px] ">
+      <div className={`flex flex-col items-center px-4  `}>
+        <div className="flex flex-col gap-6 ">
+          <h2 className="text-center text-[1.5rem] sm:text-[2.4rem] font-bold  ">
             Pick a <span className="animated-text">lanaguage </span>
           </h2>
         </div>
@@ -18,19 +18,7 @@ const CareerPageUpdate = () => {
                   {" "}
                   {c.fields}
                 </p>
-
-                {/* <span className="absolute top-2 left-2 bg-[#7E57C2] text-white px-4 py-1 text-sm rounded-sm z-40">
-                New
-              </span> */}
-                {/* Career Name */}
                 <p className="text-[.8rem] text-black">{c.about}</p>
-
-                {/* <img
-                src={c.image}
-                alt={c.career}
-                className="w-full h-[100%] sm:h-[100%] object-cover transform transition-transform duration-300 group-hover:scale-110"
-                loading="lazy"
-              /> */}
               </div>
             </Link>
           ))}

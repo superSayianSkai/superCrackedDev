@@ -11,7 +11,7 @@ const CareerPageUpdate = () => {
     <div>
       <div className="flex flex-col items-center p-4 my-[20px]">
         <div className="min-h-[70svh]">
-          <div className="flex flex-col gap-6 mt-[40px]">
+          <div className="flex flex-col gap-6 ">
             <h2 className="text-center text-[1.5rem] sm:text-[2.4rem] font-bold md:mt-[80px]">
               Kick start your <span className="animated-text">Journey</span>
             </h2>

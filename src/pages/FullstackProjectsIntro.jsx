@@ -7,9 +7,9 @@ import { FullstackProjectsStack } from "../Data.js/FullstackProjectsStack";
 const FullstackProjectsIntro = () => {
   return (
     <div>
-      <div className={`flex flex-col items-center px-4 my-[20px] `}>
-        <div className="flex flex-col gap-6 mt-[40px]">
-          <h2 className="text-center text-[1.5rem] sm:text-[2.4rem] font-bold mt-[80px] ">
+      <div className={`flex flex-col items-center px-4 `}>
+        <div className="flex flex-col gap-6 ">
+          <h2 className="text-center text-[1.5rem] sm:text-[2.4rem] font-bold ">
             Build a <span className="animated-text">side</span> and go pro
           </h2>
         </div>
@@ -27,11 +27,6 @@ const FullstackProjectsIntro = () => {
                   {" "}
                   {c.fields}
                 </p>
-
-                {/* <span className="absolute top-2 left-2 bg-[#7E57C2] text-white px-4 py-1 text-sm rounded-sm z-40">
-                New
-              </span> */}
-
                 <p className="text-[.8rem] text-black">{c.about}</p>
               </div>
             </Link>

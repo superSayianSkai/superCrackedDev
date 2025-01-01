@@ -1,12 +1,10 @@
 import fullstack from "../assets/images/fullstack.gif";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import ScrollIndicator from "./ScrollIndicator"; // Import the ScrollIndicator component
 
 const FieldPage = ({ stackData }) => {
-  // State to track if the image has been scrolled past
   const [showScrollIndicator, setShowScrollIndicator] = useState(false);
 
-  // Effect to track scroll position and set state accordingly
   useEffect(() => {
     const handleScroll = () => {
       const imageElement = document.getElementById("fullstack-image");
@@ -18,9 +16,8 @@ const FieldPage = ({ stackData }) => {
         scrollPosition,
         "Image Height: ",
         imageHeight
-      ); // Debugging
+      );
 
-      // Show the scroll indicator if scrolled past the image
       if (scrollPosition > imageHeight) {
         setShowScrollIndicator(true);
       } else {
@@ -28,10 +25,8 @@ const FieldPage = ({ stackData }) => {
       }
     };
 
-    // Listen to the scroll event
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -39,10 +34,13 @@ const FieldPage = ({ stackData }) => {
 
   return (
     <div className="relative min-h-[100vh] pt-[15rem] mb-20">
-      {/* Conditionally render the Scroll Indicator */}
+      <a href="mailto:supercrackeddev@gmail.com">
+        <p className="text-[.7rem] absolute right-4 hover:underline cursor-pointer top-[210px] sm:top-[220px]">
+          Give Feedback?
+        </p>
+      </a>
       {showScrollIndicator && <ScrollIndicator />}
 
-      {/* Background Image */}
       <div className="absolute top-0 left-0 w-[100%] h-[200px]">
         <img
           id="fullstack-image"
@@ -58,9 +56,14 @@ const FieldPage = ({ stackData }) => {
             key={index}
             className="border-[1px] border-black border-t-0 border-r-0 border-l-0 flex flex-col pb-[2rem] mx-8 my-8 cursor-pointer"
           >
-            <h2 className="font-bold my-[30px] text-[1.4rem] md:text-[1.5rem] text-[#7E57C2]">
-              {items.week}: {items.weekGoal}
-            </h2>
+            <div className="flex flex-col">
+              <h2 className="font-bold  text-[1.4rem] md:text-[1.5rem] text-[#7E57C2]">
+                {items.week}: {items.weekGoal}
+              </h2>
+              <p className="text-[.8rem] mb-[30px] italic opacity-55">
+                **Click the topics!**
+              </p>
+            </div>
             <ul className="list-disc mx-6 flex flex-col gap-6 text-[1rem] ">
               {items.resources.map((resource, index) => (
                 <a key={index} href={resource.link} className="">

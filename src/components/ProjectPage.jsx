@@ -38,6 +38,11 @@ export const ProjectPage = ({ stackData }) => {
 
   return (
     <div className="mx-auto md:w-[900px] min-h-[100vh] pt-[15rem] mb-20">
+      <a href="mailto:supercrackeddev@gmail.com">
+        <p className="text-[.7rem] absolute right-4 hover:underline cursor-pointer top-[210px] sm:top-[220px]">
+          Give Feedback?
+        </p>
+      </a>
       {showScrollIndicator && <ScrollIndicator />}
 
       <div className="absolute top-0 left-0 w-[100%] h-[200px]">

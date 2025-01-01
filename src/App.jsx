@@ -28,6 +28,7 @@ const App = () => {
 
   const router = createBrowserRouter([
     {
+      path:"/",
       element: <Layout />,
       children: [
         {
@@ -51,7 +52,7 @@ const App = () => {
           element: <MernStack />,
         },
         {
-          path: "/update",
+          path: "/journey",
           element: <CareerPageUpdate />,
         },
 
