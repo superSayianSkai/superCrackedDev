@@ -3,7 +3,7 @@ import { web2 } from "../Data.js/Career";
 const CarrierPage = () => {
   return (
     <div
-      className={`min-h-[100vh]  flex flex-col gap-10 justify-center items-center px-4 `}
+      className={`min-h-[100svh]  flex flex-col gap-10 justify-center items-center px-4 `}
     >
       <h2 className="text-center text-[1.5rem] sm:text-[2rem] font-bold mt-[80px]">
         Kickstart your Journey!

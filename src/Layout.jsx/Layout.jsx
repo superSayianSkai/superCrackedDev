@@ -12,7 +12,7 @@ export const Layout = () => {
 
   return (
     <div
-      className={`relative h-[100vh] ${
+      className={`relative h-[100svh] ${
         contributorModal ? "overflow-hidden" : ""
       }`} 
     >

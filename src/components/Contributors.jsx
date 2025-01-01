@@ -1,21 +1,21 @@
 import { ContributorData } from "../Data.js/ContributorsData";
 const Contributors = ({ setTheContributorModal }) => {
   return (
-    <div className=" absolute mx-auto inset-0 flex items-center justify-center h-[100vh]">
-      <div className="backgroundColor w-[100%]  h-[100vh] z-[30000]  text-black md:p-4 justify-center items-center gap-10 flex flex-col ">
-        <h2 className="font-bold text-4xl text-center theText-color mt-20 md:mt-0 ">
+    <div className=" absolute mx-auto inset-0 flex items-center justify-center h-[90svh]">
+
+      <div className="backgroundColor w-[100%]  h-[100vh] z-[30000]  text-black md:p-4 justify-center gap-10 flex flex-col ">
+        <h2 className="font-bold text-4xl text-center theText-color mt-40 sm:mt-20 md:mt-0 ">
           Contributors
         </h2>
-
         <i
           onClick={setTheContributorModal}
           className="bi bi-x-lg  absolute right-8 top-8 cursor-pointer text-2xl theText-color"
         ></i>
-        <div className="justify-center  scroll  gap-8  overflow-scroll overflow-x-hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  md:py-5 px-2 md:px-2 py-4">
+        <div className="justify-center mx-auto scroll  gap-8  overflow-scroll overflow-x-hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  md:py-5 md:px-2 py-4 w-[90%] ">
           {ContributorData.map((contributor, index) => (
             <div
               key={index}
-              className="py-4 px-4 rounded-md bg-white w-[320px] sm:w-[300px] lg:w-[320px] flex flex-col   gap-3  boxShadow "
+              className="py-4 px-4 rounded-md bg-white w-[320px] sm:w-[300px] lg:w-[320px] flex flex-col   gap-3  boxShadow  mx-auto"
             >
               <div className="flex justify-between">
                 <img

@@ -4,8 +4,8 @@ import { Link } from "react-router";
 
 const Choose = () => {
   return (
-    <div className="flex flex-col px-4 items-center justify-center  h-[90svh] gap-6">
-      <h2 className="text-[1.5rem] md:text-[2.4rem] font-bold">
+    <div className="flex flex-col p-4 justify-center mt-[50px] md:mt-[100px] gap-6 sm:items-center">
+      <h2 className="text-[1.5rem] md:text-[2.4rem] font-bold text-center">
         Your <span className="animated-text">journey</span> starts now
       </h2>
       <div className="mt-[40px] grid grid-cols-1 md:grid-cols-2  gap-x-6 gap-y-8 lg:w-[800px] ">
@@ -29,20 +29,9 @@ const Choose = () => {
               The World of Web 3
             </p>
 
-            {/* <span className="absolute top-2 left-2 bg-[#7E57C2] text-white px-4 py-1 text-sm rounded-sm z-40">
-                      New
-                    </span> */}
-            {/* Career Name */}
             <p className="text-[.8rem]  text-black">
               Unlock the Skills to Thrive in the Web3 Revolution
             </p>
-
-            {/* <img
-                      src={c.image}
-                      alt={c.career}
-                      className="w-full h-[100%] sm:h-[100%] object-cover transform transition-transform duration-300 group-hover:scale-110"
-                      loading="lazy"
-                    /> */}
           </div>
         </Link>
       </div>

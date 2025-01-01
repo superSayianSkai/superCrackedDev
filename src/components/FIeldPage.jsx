@@ -52,7 +52,7 @@ const FieldPage = ({ stackData }) => {
         />
       </div>
 
-      <div className="w-[800px] mx-auto">
+      <div className="md:w-[800px] mx-auto">
         {stackData.map((items, index) => (
           <div
             key={index}

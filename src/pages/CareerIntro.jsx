@@ -48,7 +48,7 @@ const HomePage = ({ toggleTheme }) => {
           <div></div>
           <div
             onClick={setTheOpenModel}
-            className="md:absolute left-[50%] translate-X-1/2 translate-Y-1/2 md:top-[42%] w-[60px] h-[60px] flex items-center justify-center rounded-full shadow-md text-[2rem] text-[white] bg-[#7E57C2] hover:bg-black cursor-pointer z-[1000] "
+            className="md:absolute left-[50%] translate-X-1/2 translate-Y-1/2 md:top-[42%] w-[60px] h-[60px] flex items-center justify-center rounded-full shadow-md text-[2rem] text-[white] bg-[#7E57C2] active:bg-black md:hover:bg-black cursor-pointer z-[1000] "
           >
             <i className="bi bi-lightning-charge"></i>
           </div>
