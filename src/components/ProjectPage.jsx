@@ -37,7 +37,7 @@ export const ProjectPage = ({ stackData }) => {
   }, []);
 
   return (
-    <div className="mx-auto md:w-[900px] min-h-[100vh] pt-[15rem] mb-20">
+    <div className="md:mx-auto md:w-[900px] min-h-[100vh] pt-[15rem] mb-20">
       <a href="mailto:supercrackeddev@gmail.com">
         <p className="text-[.7rem] absolute right-4 hover:underline cursor-pointer top-[210px] sm:top-[220px]">
           Give Feedback?
@@ -53,9 +53,15 @@ export const ProjectPage = ({ stackData }) => {
           className="w-[100%] h-[100%] object-cover"
         />
       </div>
-      <h2 className="font-bold my-[30px] text-[1.4rem] md:text-[1.5rem] text-[#7E57C2] mx-8">
-        FullStack Projects ({stackData.length})
-      </h2>
+      <div className="flex flex-col mx-10">
+        <h2 className="font-bold  text-[1.4rem] md:text-[1.5rem] text-[#7E57C2] ">
+          FullStack Projects ({stackData.length})
+        </h2>
+
+        <p className="text-[.8rem] mb-[30px] italic opacity-55">
+          **Click the Projects!**
+        </p>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
         {stackData.map((item, index) => (
           <ul
