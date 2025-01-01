@@ -1,37 +1,195 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Light Mode Variables */
+:root {
+  --text-color: #000;
+  --text2-color: #fff;
+  --backgroundColor: hsl(224, 50%, 98%);
+  --button-color: #000;
+  --shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 15px 25px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  --text-color: #fff;
+  --text2-color: #000;
+  --backgroundColor: #000;
+  --button-color: #fff;
+  --shadow: 0 10px 20px rgba(126, 87, 194, 0.4), 0 4px 8px rgba(126, 87, 194, 0.4);
+  --shadow-hover: 0 15px 25px rgba(126, 87, 194, 0.6), 0 6px 12px rgba(126, 87, 194, 0.5);
+}
+
+/* General Styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", serif;
+  transition: all 0.3s cubic-bezier(0.16, 0.8, 0.62, 1.52);
+  scroll-behavior: smooth;
 }
 
+body {
+  background: var(--backgroundColor);
+  color: var(--text-color);
+}
 
+/* Box Shadow */
+.boxShadow {
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.3s ease; /* Add smooth transition to the box-shadow */
+}
+
+.boxShadow:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+[data-theme="dark"] .boxShadow {
+  box-shadow: var(--shadow); /* Apply purple shadow for dark mode */
+}
+
+[data-theme="dark"] .boxShadow:hover {
+  box-shadow: var(--shadow-hover); /* Apply stronger purple shadow on hover in dark mode */
+}
+
+.text-color {
+  color: var(--text2-color);
+}
+.theText-color {
+  color: var(--text-color);
+}
+.button-color {
+  background: var(--button-color);
+  color: var(--text2-color);
+}
+.backgroundColor {
+  background: var(--backgroundColor);
+}
 
 .animated-text {
-  font-weight: bold;
-  position: relative;
-  color: white; /* Base text color */
-  background: linear-gradient(90deg, #7E57C2, white, #7E57C2); /* Narrow gradient */
-  background-size: 200% 100%; /* Extra-wide gradient for movement */
+  /* position:relative; */
+  /* Set the background to black */
+  background-image: linear-gradient(90deg, #7e57c2, #eef6ff, #7e57c2);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
   background-clip: text;
-  -webkit-background-clip: text; /* Safari compatibility */
-  color: transparent; /* Make the text transparent */
-  animation: text-move 5s linear infinite; /* Animate the gradient */
-  
+  color: transparent; /* Make text transparent to show gradient */
+  animation: text-move 5s linear infinite;
 }
 
 /* Keyframes for moving the gradient */
 @keyframes text-move {
   0% {
-    background-position: 200% 0%; /* Start at the far left */
+    background-position: 200% 0%;
   }
   100% {
-    background-position: -200% 0%; /* Move to the far right */
+    background-position: -200% 0%;
   }
+}
+
+/* Slider animation */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 2;
+  width: 15%;
+}
+
+.slider::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    hsl(224, 50%, 98%) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.slider::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    hsl(224, 50%, 98%) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 10);
+  animation: scroll 15s linear infinite;
+  animation-play-state: running;
+  will-change: transform;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  cursor: pointer;
+  flex: 0 0 250px;
+  margin-right: 16px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-266px * 5));
+    -webkit-transform: translateX(calc(-266px * 5));
+    -moz-transform: translateX(calc(-266px * 5));
+    -ms-transform: translateX(calc(-266px * 5));
+    -o-transform: translateX(calc(-266px * 5));
+  }
+}
+
+/* clamp text */
+.word {
+  font-size: clamp(1.4rem, 8vw, 4.5rem);
+}
+
+.centered-element {
+  left: clamp(10%, 50%, 90%);
+  top: clamp(10%, 50%, 90%);
+  transform: translate(-50%, -50%);
+}
+.scale {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  animation: waveExpand 1s infinite ease-out;
+  -webkit-animation: waveExpand 1s infinite ease-out;
+}
+
+@keyframes waveExpand {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(100);
+    opacity: 0;
+  }
+}
+
+.scroll {
+  scrollbar-width: none;
 }

@@ -1,8 +1,6 @@
-import { Career } from "../Data.js/Career";
-import { useState } from "react";
+import { web2 } from "../Data.js/Career";
 
 const CarrierPage = () => {
-
   return (
     <div
       className={`min-h-[100vh]  flex flex-col gap-10 justify-center items-center px-4 `}
@@ -11,7 +9,7 @@ const CarrierPage = () => {
         Kickstart your Journey!
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-[1200px]">
-        {Career.map((c, index) => (
+        {web2.map((c, index) => (
           <a key={index} href={c.link} className="group relative">
             <div className="rounded-md overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300  h-[300px]">
               <span className="absolute top-2 left-2 bg-[#7E57C2] text-white px-4 py-1 text-sm rounded-sm z-40">
@@ -21,7 +19,6 @@ const CarrierPage = () => {
               <p className="absolute bottom-4 left-4 text-[1rem] sm:text-[1.2rem] font-bold text-white z-30 group-hover:text-[#7E57C2] transition-colors">
                 {c.career}
               </p>
-
               <img
                 src={c.image}
                 alt={c.career}
