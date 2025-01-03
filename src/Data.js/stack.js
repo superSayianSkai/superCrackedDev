@@ -467,7 +467,7 @@ export const Backend = [
         resource: "MongoDB(NoSQL) ",
       },
       {
-        link: "https://youtu.be/qw--VYLpxG4?si=PC1REjB526w01Wtd",
+        link: "https://youtu.be/SpfIwlAYaKk?si=whyBpxwCJL-HsJNB",
         resource: "Postgres(SQL) ",
       },
     ],
@@ -481,7 +481,7 @@ export const Backend = [
         resource: "Rest API  Authentication and  Authorization ",
       },
       {
-        link: "https://youtu.be/qw--VYLpxG4?si=PC1REjB526w01Wtd",
+        link: "https://youtu.be/n7mV2GAEx8M?si=xOOHQS9_jEArglDV",
         resource: "Why we need caching ",
       },
     ],
