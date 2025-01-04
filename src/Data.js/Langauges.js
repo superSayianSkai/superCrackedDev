@@ -565,25 +565,7 @@ export const PythonBackendRoadmap = [
   },
   {
     week: "Week 9",
-    weekGoal: "Introduction to Web Development with Django",
-    resources: [
-      {
-        link: "",
-        resource: "Introduction to Django and project structure",
-      },
-      {
-        link: "",
-        resource: "Starting a Django project and launching the web server",
-      },
-      {
-        link: "",
-        resource: "Django models and ORM basics",
-      },
-    ],
-  },
-  {
-    week: "Week 10",
-    weekGoal: "Working with Django",
+    weekGoal: "Django",
     resources: [
       {
         link: "https://youtube.com/playlist?list=PL4cUxeGkcC9iqfAag3a_BKEX1N43uJutw&si=bwUDynskJ6qMVnCQ",
@@ -593,7 +575,7 @@ export const PythonBackendRoadmap = [
   },
 
   {
-    week: "Week 11",
+    week: "Week 10",
     weekGoal: "Authentication, Authorization, and Deployment",
     resources: [
       {
@@ -621,7 +603,7 @@ export const PythonBackendRoadmap = [
     ],
   },
   {
-    week: "Week 12",
+    week: "Week 11",
     weekGoal: "Final Project",
     resources: [
       {
